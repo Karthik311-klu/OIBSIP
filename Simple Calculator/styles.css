@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "Developed by Karthik Maddi";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 8em;
+  color: rgba(30, 57, 91, 0.1); /* Dark blue with low opacity */
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 0; /* Behind all content */
+  letter-spacing: 10px; /* Add some spacing between letters for effect */
+}
+
+.calculator {
+  width: 500px;
+  height: 600px;
+  background-color: #1e395b;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.screen {
+  background-color: #222;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: right;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+}
+
+.operation-screen {
+  background-color: #333;
+  color: #aaa;
+  font-size: 1.2em;
+  text-align: right;
+  padding: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.button, .operator, .clear, .delete, .plus-minus, .enter, .ans {
+  background-color: #30597e;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  box-shadow: 0 5px #1b3a57;
+}
+
+.button:hover, .operator:hover, .clear:hover, .delete:hover, .plus-minus:hover, .enter:hover, .ans:hover {
+  background-color: #3f6e96;
+}
+
+.button:active, .operator:active, .clear:active, .delete:active, .plus-minus:active, .enter:active, .ans:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px #1b3a57;
+}
+
+.operator {
+  background-color: #ff9500;
+  box-shadow: 0 5px #b35916;
+}
+
+.operator:hover {
+  background-color: #e08900;
+}
+
+.operator:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px #b35916;
+}
+
+.clear, .delete, .plus-minus, .enter, .ans {
+  background-color: #d32f2f;
+  box-shadow: 0 5px #a91c1c;
+}
+
+.clear:hover, .delete:hover, .plus-minus:hover, .enter:hover, .ans:hover {
+  background-color: #c12727;
+}
+
+.clear:active, .delete:active, .plus-minus:active, .enter:active, .ans:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px #a91c1c;
+}
+
+button {
+  width: 100%;
+  height: 70px;
+}
+
+button.large {
+  grid-column: span 2;
+}
