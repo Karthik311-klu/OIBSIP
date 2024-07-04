@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('To\ Do\ List.jpeg'); /* Light Blue Color */
+    margin: 0;
+    padding: 20px;
+    color: #000; /* Change default text color to black */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #0f0000; /* Change h1 text color to black */
+}
+
+main {
+    max-width: 800px; /* Increase the maximum width of the main container */
+    margin: 0 auto;
+    background-color: #4797c5;
+    padding: 30px; /* Increase padding for better spacing */
+    border-radius: 12px; /* Increase border radius for rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance box shadow for depth */
+}
+
+section {
+    margin-bottom: 30px; /* Increase margin bottom for better separation */
+}
+
+h2 {
+    font-size: 2em; /* Increase font size for section headers */
+    margin-bottom: 20px; /* Increase margin bottom for better spacing */
+    color: #66ff00; /* Bright Blue color for section headers */
+}
+
+form {
+    display: flex;
+    gap: 20px; /* Increase gap between form elements */
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 15px; /* Increase padding for input fields */
+    border: 2px solid #007bff; /* Blue border for input fields */
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #0056b3; /* Darker Blue color for input focus */
+    outline: none;
+}
+
+button {
+    padding: 15px 30px; /* Increase padding for buttons */
+    border: none;
+    color: #0e1314;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.add-task {
+    background-color: #b9d8f4; /* Blue color for Add Task button */
+}
+
+button.add-task:hover {
+    background-color: #7fa7d1; /* Darker blue color on hover */
+    transform: translateY(-4px); /* Increase hover elevation */
+}
+
+button:active {
+    transform: translateY(0);
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Increase padding for task items */
+    border-bottom: 2px solid #007bff; /* Blue border for task items */
+    transition: background-color 0.3s ease;
+}
+
+.task-list li:hover {
+    background-color: #f0f8ff; /* Light Blue color for task hover */
+}
+
+.task-list li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Darker colors for action buttons */
+
+button.edit {
+    background-color: #6c757d; /* Dark Gray color for Edit button */
+}
+
+button.edit:hover {
+    background-color: #545b62; /* Darker Gray color on hover */
+    transform: translateY(-4px); /* Increase hover elevation */
+}
+
+button.delete {
+    background-color: #dc3545; /* Red color for Delete button */
+}
+
+button.delete:hover {
+    background-color: #c82333; /* Darker Red color on hover */
+    transform: translateY(-4px); /* Increase hover elevation */
+}
+
+button.complete {
+    background-color: #28a745; /* Green color for Complete button */
+}
+
+button.complete:hover {
+    background-color: #218838; /* Darker Green color on hover */
+    transform: translateY(-4px); /* Increase hover elevation */
+}
