@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="screen" class="screen">0</div>
+        <div id="operation-screen" class="operation-screen"></div>
+        <div class="buttons">
+            <button class="button" value="7">7</button>
+            <button class="button" value="8">8</button>
+            <button class="button" value="9">9</button>
+            <button class="operator" value="/">/</button>
+            <button class="delete">DEL</button>
+
+            <button class="button" value="4">4</button>
+            <button class="button" value="5">5</button>
+            <button class="button" value="6">6</button>
+            <button class="operator" value="*">*</button>
+            <button class="clear">Clear</button>
+
+            <button class="button" value="1">1</button>
+            <button class="button" value="2">2</button>
+            <button class="button" value="3">3</button>
+            <button class="operator" value="-">-</button>
+            <button class="plus-minus">±</button>
+
+            <button class="button" value="0">0</button>
+            <button class="button" value=".">.</button>
+            <button class="operator" value="+">+</button>
+            <button class="button" value="(">(</button>
+            <button class="button" value=")">)</button>
+
+            <button class="button" value="√">√</button>
+            <button class="button" value="%">%</button>
+            <button class="enter" value="Enter">Enter</button>
+            <button class="ans" value="ans">Ans</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
